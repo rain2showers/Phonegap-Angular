@@ -1,32 +1,32 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionic.bowlAwesome" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Phonegap Angular</name>
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.ionic.bowlAwesome"
+    version     = "1.0.0" >
+
+  <!-- versionCode is optional and Android only -->
+
+  <name>Bowl Awesome</name>
+
   <description>
-    A simple bowling record tracker.
+   Phonegap test.
   </description>
-  <author email="dev@callback.apache.org" href="http://cordova.io">
+
+  <author href="https://build.phonegap.com" email="vkathuluri@gmail.com">
 
   </author>
+
   <content src="index.html" />
   <access origin="*" />
   <preference name="fullscreen" value="false" />
   <preference name="webviewbounce" value="true" />
-  <icon src="icon.png" />
-  <!--<icon src="https://s3.amazonaws.com/build.phonegap.com/85e821c6-6276-11e3-a3ff-22000a98b3d6/icon.png" gap:platform="android" gap:density="ldpi" />-->
-  <!--<icon src="res/icon/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
-  <icon src="res/icon/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
-  <icon src="res/icon/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />-->
-  <plugin name="com.phonegap.plugins.facebookconnect">
-    <param name="APP_ID" value="386895214788542" />
-    <param name="APP_NAME" value="Bowl­A­w­e­some" />
-  </plugin>
-  <feature name="Notification">
-    <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
-  </feature>
-  <feature name="Vibration">
-    <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
-  </feature>
-  <feature name="Contacts">
-    <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
-</feature>
+
+  <gap:url-scheme name="com.acme.myscheme" role="None">
+    <scheme>pgbr</scheme>
+    <scheme>pgbw</scheme>
+  </gap:url-scheme>
+
+  <gap:plugin name="org.apache.cordova.device" />
+  <gap:plugin name="org.apache.cordova.contacts" />
+
 </widget>
