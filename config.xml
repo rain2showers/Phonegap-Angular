@@ -6,10 +6,10 @@
 
   <!-- versionCode is optional and Android only -->
 
-  <name>Bowl Awesome</name>
+  <name>Facebook Connect</name>
 
   <description>
-    A simple bowling record tracker.
+    Facebook Connect
   </description>
 
   <author href="https://build.phonegap.com" email="vkathuluri@gmail.com">
